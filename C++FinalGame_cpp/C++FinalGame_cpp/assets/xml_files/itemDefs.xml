@@ -1,0 +1,27 @@
+<ItemDefs> <!-- Root Elemet -->
+  <Items>
+	 <Item>
+		 <Name>Potion</Name>
+		 <Description>Heals a small amount of health</Description>
+		 <Type>Health</Type>
+		 <Value>20</Value>
+		 <BuyPrice>40</BuyPrice>
+	 </Item>
+	  
+	  <Item>
+		 <Name>Half Full Potion</Name>
+		 <Description>Heals half of your total health</Description>
+		 <Type>Health</Type>
+		 <Value>200</Value>
+		 <BuyPrice>350</BuyPrice>
+	  </Item>
+
+	  <Item>
+		 <Name>Full Potion</Name>
+		 <Description>Heals all of your party members</Description>
+		 <Type>Health</Type>
+		 <Value>-1</Value>
+		 <BuyPrice>50000</BuyPrice>
+	 </Item>
+  </Items>	
+</ItemDefs>

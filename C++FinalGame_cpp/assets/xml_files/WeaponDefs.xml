@@ -1,0 +1,31 @@
+<WeaponDefs>
+	<Weapons>
+
+		<Weapon>
+			<Name>Short Sword</Name>
+			<Description>Worn, one handed Sword</Description>
+			<Type>Weapon</Type>
+			<BuyPrice>180</BuyPrice>
+			<WeaponProperties>
+				<AttackPwr>15</AttackPwr>
+				<WeaponType>Sword</WeaponType>
+			</WeaponProperties>
+			<StatModifier>
+				<ModValue>8</ModValue>
+				<ModType>Strength</ModType>
+			</StatModifier>
+		</Weapon>
+
+		<Weapon>
+			<Name>Long Sword</Name>
+			<Description>Two handed Sword, capable of heavy damage</Description>
+			<Type>Weapon</Type>
+			<BuyPrice>400</BuyPrice>
+			<WeaponProperties>
+				<AttackPwr>40</AttackPwr>
+				<WeaponType>Sword</WeaponType>
+			</WeaponProperties>
+		</Weapon>
+
+	</Weapons>
+</WeaponDefs>

@@ -1,0 +1,31 @@
+<AmourDefs>
+	<Arms>
+
+		<Armour>
+			<Name>Leather Armour</Name>
+			<Description>Worn, tattered leather ChestPlate</Description>
+			<Type>Armour</Type>
+			<BuyPrice>150</BuyPrice>
+			<ArmourProperties>
+				<DefensePwr>30</DefensePwr>
+				<ArmourType>Chest</ArmourType>
+			</ArmourProperties>
+			<StatModifier>
+				<ModValue>5</ModValue>
+				<ModValue>Stamina</ModValue>
+			</StatModifier>
+		</Armour>
+
+		<Armour>
+			<Name>Leather Helmet</Name>
+			<Description>Worn, tattered leather Helmet</Description>
+			<Type>Armour</Type>
+			<BuyPrice>125</BuyPrice>
+			<ArmourProperties>
+				<DefensePwr>25</DefensePwr>
+				<ArmourType>HeadGear</ArmourType>
+			</ArmourProperties>
+		</Armour>
+		
+	</Arms>
+</AmourDefs>

@@ -1,0 +1,45 @@
+#pragma once
+
+#include "utility/Colours.h"
+#include <Windows.h>
+#include <memory>
+#include <string>
+
+class Console
+{
+private:
+    const int SCREEN_WIDTH = 128;
+    const int SCREEN_HEIGHT = 48;
+
+    const int BUFFER_SIZE = SCREEN_WIDTH * SCREEN_HEIGHT;
+    const int HALF_WIDTH = SCREEN_WIDTH / 2;
+    const int HALF_HEIGHT = SCREEN_HEIGHT / 2;
+
+    HANDLE m_hConsole;
+    HWND m_hConsoleWindow;
+    RECT m_ConsoleWindowRect;
+
+    DWORD m_BytesWritten;
+    std::unique_ptr<wchar_t[]> m_pScreen;
+
+    bool SetTextColour(int size, int x, int y, HANDLE handle, WORD colour);
+    void DrawBorder();
+
+public:
+    Console();
+    ~Console();
+
+    const int GetScreenWidth() const { return SCREEN_WIDTH; }
+    const int GetScreenHeight() const { return SCREEN_HEIGHT; }
+    const int GetHalfWidth() const { return HALF_WIDTH; }
+    const int GetHalfHeight() const { return HALF_HEIGHT; }
+
+    void ClearBuffer();
+    void Write(int x, int y, const std::wstring& text, WORD color = WHITE);
+    void Draw();
+    bool ShowConsoleCursor(bool show);
+    void DrawPanelHorz(int x, int y, size_t length, WORD colour = WHITE, const std::wstring& character = L"=");
+    void DrawPanelVert(int x, int y, size_t height, WORD colour = WHITE, const std::wstring& character = L"|");
+    void DrawPanel(int x, int y, size_t width, size_t height, WORD colour = WHITE,
+        const std::wstring& width_char = L"=", const std::wstring& height_char = L"|");
+};
